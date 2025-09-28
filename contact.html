@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact - Abhinav</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/new.css" rel="stylesheet">
+    <script>
+        function redirectToIndex() {
+            window.location.href = "index1.html";
+        }
+    </script>
+</head>
+<body class="bg">
+    <nav class="navbar navbar-dark navbar-bg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Abhinav</a>
+            <div>
+                <a class="me-3" href="myself.html">MySelf</a>
+                <a class="me-3" href="experience.html">Experience</a>
+                <a class="me-3" href="education.html">Education</a>
+                <a class="me-3" href="coding-profile.html">Coding Profile</a>
+                <a class="me-3" href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container-fluid" style="padding: 4rem 12rem;">
+        <h2 class="subtitle">Contact</h2>
+        <form method="post" action="https://formspree.io/f/xdorkpeo" class="form-group col-12 col-xl-8" style="margin-top: 20px;">
+            <input id="name" class="form-control" name="Name" type="text" placeholder="Name" required />
+            <input id="email" class="form-control" name="Email" type="email" placeholder="Email" required />
+            <textarea id="message" row="10" name="Message" class="form-control" placeholder="Message" required></textarea>
+            <input type="hidden" name="_subject" value="New Message" />
+            <button id="submit" class="btn" type="submit">Submit</button>
+        </form>
+        <p style="opacity: 0.6; margin-top: 10px;">After submission, you'll see a thank-you page.</p>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/fontawesome5.min.js"></script>
+</body>
+</html> 
